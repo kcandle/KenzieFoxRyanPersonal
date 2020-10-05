@@ -781,7 +781,7 @@ a {
 
 .about-img {
   min-height: 68%;
-  max-height: 75.5%;
+  max-height: 76%;
   border: 1.5px solid #000;
   float: right;
 }
@@ -1279,11 +1279,12 @@ ol.carousel-indicators li.active {
   z-index: 60;
   font-weight: 350;
 }
-
+/*
 .ellipses-container .contact-detail:hover {
-  text-decoration-color: red;
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  text-decoration: none;
 }
-
+*/
 .ellipses-container .cd-1 {
   font-size: 38px;
   padding-bottom: 2%;
@@ -1298,6 +1299,10 @@ ol.carousel-indicators li.active {
   position: relative;
   z-index: 60;
   width: 40px;
+}
+
+.contact-icon:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
 
 .ellipses {

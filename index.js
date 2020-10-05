@@ -149,8 +149,8 @@
 
         $(container).css({
             'overflow' : 'hidden',
-            '-ms-touch-action': 'none',  /* Touch detection for Windows 8 */
-            'touch-action': 'none'       /* IE 11 on Windows Phone 8.1*/
+            '-ms-touch-action': 'none',  /* Touch detection for Windows */
+            'touch-action': 'none'       /* IE 11 on Windows Phone*/
         });
 
         //init
@@ -871,11 +871,6 @@
             }
         }
 
-        /**
-        * Checks for translate3d support
-        * @return boolean
-        * http://stackoverflow.com/questions/5661671/detecting-transform-translate3d-support
-        */
         function support3d() {
             var el = document.createElement('p'),
                 has3d,
@@ -926,17 +921,3 @@ $('.main-wrapper').pagepiling({
                 animateAnchor: true,
                 
             });
-
-
-// Cirlces
-
-// var svg = document.querySelector('.circle-chart-circle');
-//   att = svg.getAttribute('stroke-dasharray');
-//   text = document.querySelector('text.circle-chart-percent');
-
-// if (att === '100') {
-//   text.textContent = 'full';
-//   }
-// else {
-//   text.textContent = att + '%';
-// }
